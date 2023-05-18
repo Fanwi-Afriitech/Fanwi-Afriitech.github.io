@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Header and navigation section*/
+
+    .dropdown {
+        /*position: fixed;*/
+        display: none;
+      } 
+    .dropbtn {
+        height: 3em;
+        width: 3em;
+      }
+       .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:hsla(120, 100%, 13%, 0.6);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+      }
+      
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;
+    color: black;
+    }
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      @media only screen and (max-width:600px){
+        .dropdown{
+            display: inline-block;
+            position: fixed;
+        }
+      }
+      
+ 
+  /*End of menubar*/
+
+
+
+header{
+    background-color:#8F2C9D;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    list-style-type: none; 
+}
+header ul li a{
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    
+    
+}
+ .logo{
+    margin-left: 2em;
+    padding-top: 0.5em;
+    font-size: 1.6em;
+    color:#96AC06;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.logo img{
+height: 4em;
+width: 4em;
+}
+header ul li a:hover{
+    background-color: #748500;
+    border-radius: 1em;
+}
+/*End of header section design*/
+
+
+
+/* Beginning of first section code*/
+
+.first-section{
+    width: 100%;
+    height: 40em;
+    
+}
+.image img{
+    width: 100%;
+    height: 40em;
+    
+    
+}
+
+
+/* End of first section */
+/*Intermediate section*/
+.inter1-2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+    width: 100%;
+    height: 5em;
+    
+    
+}
+.inter1-2 h1{
+    border-bottom: 3px black solid;
+    width: fit-content;
+    padding: 0.3em;
+    color: hsla(180, 100%, 10%, 0.9);
+}
+
+/* Beinning of second section */
+
+.second-section{
+    display: flex;
+    margin-top: 1em;
+    justify-content:space-around;
+    width: 100%;
+    height: 31em;
+    padding-top: 0.5em;
+    margin-bottom: 4em;
+    
+    
+   
+}
+
+.left-second-section{
+    width: 45%; 
+}
+.second-section div img{
+    width: 100%;
+    height: 35em;
+    border: 4px #96AC06 groove;
+}
+.second-section div img:hover{
+box-shadow: 0.5em 0.5em 0.5em #A34CAF;
+}
+
+.right-second-section{
+    width: 40%;
+}
+.right-second-section p{
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.4em;
+    margin-right: 1em;
+}
+
+
+
+.right-second-section button {
+    
+    margin-left: 35%;
+    background-color: hsla(180, 100%, 10%, 0.9);
+    height: 3em;
+    border-radius: 1em;
+    
+}
+
+.right-second-section button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*end of second section*/
+
+/*Beginning of third section*/
+.third-section{
+    height: 21em;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 0.5em;
+    display: flex; 
+    justify-content: space-around;
+    border-top: 2px #8F2C9D solid;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.third-section div img{
+    height: 20em;
+    width: 90%;    
+}
+.third-section-right{
+    width: 50%;
+    height: 20em;
+}
+.third-section-left{
+    width: 35%;
+    font-size: 1.3em;
+    color:hsla(180, 100%, 10%, 0.9);
+    box-sizing: border-box;
+    
+}
+.third-section-left li{
+    border-bottom: 2px #748500 solid;
+    line-height: 1.5em;
+    list-style-type:disc;
+    
+
+}
+.third-section-left ul{
+    margin-left: 0px;
+}
+
+/*Beginning of styling of third section for small devices*/
+
+
+/*styling for breakpoint 250*/
+@media only screen and (max-width:250px){
+    .third-section{
+        margin-top: 27em;
+    }
+}
+/*styling for breakpoint 223*/
+@media only screen and (max-width:223px){
+    .third-section{
+        margin-top:30em;
+
+    }
+}
+/*For breakpoint 880px*/
+@media only screen and (max-width:880px){
+.third-section{
+    font-size: 1em;
+}
+}
+/*Styling for breakpoint 612px*/
+@media only screen and (max-width:612px){
+    .third-section{
+        height: 22em;
+    }
+}
+
+/*End of third section*/
+
+/*Beginning of fourth section*/
+.fourth-section{
+    display: flex;
+    justify-content: space-around;
+    height: 28em;
+    margin-bottom: 1.6em;
+    width: 100%;   
+}
+.fourth-section div{
+    width: 30%;
+    text-align: center;
+    border-bottom: 2px black solid;
+    
+}
+.fourth-section div img{
+    height: 15em;
+    width: 90%;
+    border: 4px #748500 groove;
+}
+
+
+.fourth-section div p{
+    width: 70%;
+    text-align: justify;
+    margin-left: 11%;
+    margin-top: -1em;
+    font-size: 1.1em;
+}
+
+
+
+
+/*End of fourth section*/
+
+/* Beginning of section 5 */
+.section5{
+display: flex;
+justify-content: center;
+font-size: 1.6em;
+color: #748500;
+font-style: oblique;
+width: 100%;
+height: 4em;
+box-sizing: border-box;
+text-align: center;
+}
+
+/*End of section 5*/
+.section6{
+    display: flex;
+    justify-content: space-around;
+    height: 25em;
+    margin-top: 0em;
+    margin-bottom: 3em;
+    width: 100%;
+    
+}
+.section6 div{
+    width: 35%;
+    text-align:center;
+    padding: 1em 0 0 0;
+    height: fit-content;
+    line-height: 1.8em;
+    
+    
+}
+.section6 div img{
+    height: 13em;
+    border: 4px #748500 groove;
+    border-radius: 1px;
+    width: 80%;
+} 
+.section6 div p{
+    /*text-align: center;*/
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.1em;
+}
+.para{
+    text-align: left;
+}
+
+/*certificates styling*/
+.cert{
+    list-style-type: disc;
+}
+
+
+
+/*Beginning of footer*/
+.foots{
+    width: 100%;
+    height: 14em;
+    background-color: #8F2C9D;
+}
+.foot{
+    width: 100%;
+    height: 11em;
+    
+    color: white;
+    display: flex;
+}
+/*styling for break point 620px*/
+.foot div{
+    width: 32%;
+    text-align: justify;
+    margin-left: 8%;
+}
+.foot div li{
+    list-style-type: none;
+    line-height: 1.5em;
+}
+.foot div li a{
+    text-decoration: none;
+    color: #fff;
+}
+.foot div li a:hover{
+    color:#e15f8f;
+}
+.last span{
+    margin-left: 2em;
+}
+
+
+
+   
+
+
+
+    
+
+
+
